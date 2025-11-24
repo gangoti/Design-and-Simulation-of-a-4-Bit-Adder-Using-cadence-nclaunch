@@ -32,18 +32,18 @@ The aim is to design and simulate a **4-bit Adder** using **Verilog HDL** and ve
 
 ## Verilog Code for 1-Bit Full Adder
 ```verilog
-module full_adder (A, B, Cin,Sum, Cout);
-    input A, B, Cin;
-    output Sum, Cout;
-
+module full_adder (
+    input A, B, Cin,
+    output Sum, Cout
+);
     assign Sum = A ^ B ^ Cin;
     assign Cout = (A & B) | (B & Cin) | (A & Cin);
 endmodule
 ```
 
 ## Truth Table for 1-Bit Full Adder
+<img width="944" height="392" alt="image" src="https://github.com/user-attachments/assets/c43f4a40-503d-4bf0-8682-5413c991bf77" />
 
-![image](https://github.com/user-attachments/assets/0ea58111-49fb-49a4-ad6a-ee36cbf4e479)
 
 ## Verilog Code for 4-Bit Ripple carry Adder
 ```verilog
@@ -89,24 +89,25 @@ endmodule
 ```
 
 ## Truth Table for 4-Bit Full Adder
+<img width="916" height="331" alt="image" src="https://github.com/user-attachments/assets/367e6c93-c800-43d9-bce1-da1155241eb8" />
 
-![image](https://github.com/user-attachments/assets/567af4cf-875d-448b-b616-40e450d5bbde)
 
 
 ## Simulation Results
 
 ### Nclaunch Work Library Window
+<img width="1919" height="1018" alt="image" src="https://github.com/user-attachments/assets/3e447d13-f0e2-4c73-bebc-60e7455f55f6" />
 
-![Screenshot 2025-05-21 155538](https://github.com/user-attachments/assets/187ebe28-40e2-44b2-9b78-d08bdc67d62c)
 
 ### Simulation Waveforms
-![Screenshot 2025-05-21 155512](https://github.com/user-attachments/assets/4d1457be-ef30-4b8b-a58d-aa8ac39c078c)
+<img width="1017" height="570" alt="image" src="https://github.com/user-attachments/assets/9cb9e87e-fb87-4ee8-9a47-2d33f5a479c5" />
 
-
-
-## Results
-Successfully designed the 1-bit Full Adder and 4-bit Adder using Verilog HDL.
+## Result:
+Successfully designed the 1-bit Full Adder and 4-bit Adder using Verilog HDL. 
 Simulated the design using Cadence nclaunch and verified the output.
 Observed correct addition functionality for all test cases.
+
+
+
 
 
